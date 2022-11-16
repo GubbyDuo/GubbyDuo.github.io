@@ -247,10 +247,6 @@ html {
     width: 200px;
   }
 }
-.project-image--googleBooks {
-  height: 200px;
-  width: 400px;
-}
 .project-row {
   display: grid;
   flex-direction: row;
@@ -263,6 +259,10 @@ html {
   }
 }
 .project-row--text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   text-align: center;
 }
@@ -298,3 +298,5 @@ h3 {
 .home-message {
   text-align: center;
 }
+
+/*# sourceMappingURL=style.css.map */
