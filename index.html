@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200&family=Libre+Baskerville&family=Roboto+Slab:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <script type="text/javascript" src="index.js"></script>
+        <title>Sam's Portfolio</title>
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="navbar navbar--top">
+                <div class="navbar navbar--item">
+                    <a
+                        class="scrollHome navbar navbar--link active"
+                        href="#scrollHome"
+                        >Home</a
+                    >
+                </div>
+                <div class="navbar navbar--item">
+                    <a
+                        class="scrollSkills navbar navbar--link"
+                        href="#scrollSkills"
+                        >Skills</a
+                    >
+                </div>
+                <div class="navbar navbar--item">
+                    <a
+                        class="scrollContact navbar navbar--link"
+                        href="#scrollContact"
+                        >Contact</a
+                    >
+                </div>
+                <div class="navbar navbar--item">
+                    <a class="projects navbar navbar--link" href="#projects"
+                        >Projects</a
+                    >
+                </div>
+            </div>
+        </nav>
+        <section class="section section--one" id="scrollHome">
+            <div class="home">
+                <h1 class="home--heading">Samuel Gubbins</h1>
+                <p class="home--message">Junior Full Stack Developer</p>
+            </div>
+        </section>
+        <section class="section section--two" id="scrollSkills">
+            <h2 class="skills--heading">Some of my skills include:</h2>
+            <div class="skills skills--gallery">
+                <div class="skills skills--container">
+                    <img
+                        onclick="iconClick(this.id)"
+                        id="cSharpIcon"
+                        class="skills--logo"
+                        src="./Images/CsharpLogo.png"
+                        alt=""
+                    />
+                    <p>C#</p>
+                </div>
+
+                <div class="skills skills--container">
+                    <img
+                        onclick="iconClick(this.id)"
+                        id="reactIcon"
+                        class="skills--logo"
+                        src="./Images/react_logo.png"
+                        alt=""
+                    />
+                    <p>React</p>
+                </div>
+
+                <div class="skills skills--container">
+                    <img
+                        onclick="iconClick(this.id)"
+                        id="jsIcon"
+                        class="skills--logo"
+                        src="./Images/Js-Logo.png"
+                        alt=""
+                    />
+                    <p>Javascript</p>
+                </div>
+
+                <div class="skills skills--container">
+                    <img
+                        onclick="iconClick(this.id)"
+                        id="sqlIcon"
+                        class="skills--logo"
+                        src="./Images/SQLLogo.png"
+                        alt=""
+                    />
+                    <p>SQL</p>
+                </div>
+
+                <div class="skills skills--container">
+                    <img
+                        onclick="iconClick(this.id)"
+                        id="gitIcon"
+                        class="skills--logo"
+                        src="./Images/Git-Logo.png"
+                        alt=""
+                    />
+                    <p>Git</p>
+                </div>
+
+                <div class="skills skills--container">
+                    <img
+                        onclick="iconClick(this.id)"
+                        id="javaIcon"
+                        class="skills--logo"
+                        src="./Images/java_logo.png"
+                        alt=""
+                    />
+                    <p>Java</p>
+                </div>
+
+                <div class="skills skills--container">
+                    <img
+                        onclick="iconClick(this.id)"
+                        id="springIcon"
+                        class="skills--logo"
+                        src="./Images/springboot-icon.png"
+                        alt=""
+                    />
+                    <p>Spring Boot</p>
+                </div>
+            </div>
+            <div class="skills--subtext" id="skillsText"></div>
+        </section>
+        <section class="section section--three" id="scrollContact">
+            <div class="about-me--section">
+                <div class="about-me--about">
+                    <h1>About Me</h1>
+                    <!--Who I am/About me-->
+                    <!--My links-->
+                    <!--My projects-->
+                    <div class="about-me--para">
+                        <p class="about-me--para--text">
+                            From a young age, I have always demonstrated an
+                            interest in computers. Before I graduated high
+                            school, I knew that I would want to pursue a career
+                            in technology, so after graduation I completed a
+                            diploma in programming at Tafe Western Sydney. Since
+                            then I have been looking to advance my knowledge and
+                            career in all things Tech.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-me--contact">
+                <h1>Contact me</h1>
+                <div class="about-me--logo--container">
+                    <a href="https://github.com/GubbyDuo">
+                        <div class="about-me--logo">
+                            <img
+                                class="about-me--logo--image"
+                                src="./Images/github-icon.png"
+                                alt=""
+                            />
+                            <p class="link">Github</p>
+                        </div>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/samuel-gubbins-029266203/"
+                    >
+                        <div class="about-me--logo">
+                            <img
+                                class="about-me--logo--image"
+                                src="./Images/linkedin-icon.png"
+                                alt=""
+                            />
+                            <p class="link">LinkedIn</p>
+                        </div>
+                    </a>
+                    <a
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=samuel.gubbins@gmail.com"
+                    >
+                        <div class="about-me--logo">
+                            <img
+                                class="about-me--logo--image"
+                                src="./Images/Email-Icon.png"
+                            />
+                            <p class="link">Email</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="section section--four" id="projects">
+            <h1>My Projects</h1>
+            <div class="project-gallery">
+                <div
+                    onclick="window.open(`https://github.com/GubbyDuo/GoogleBooksAPI`);"
+                    class="project-row project-row--left"
+                >
+                    <div class="project-row--image">
+                        <img
+                            class="project-image--googleBooks project-image"
+                            src="./Images/GoogleBooksBetter.png"
+                            alt=""
+                        />
+                    </div>
+                    <div class="project-row--text">
+                        <h1>Google Books API</h1>
+                        <p>
+                            A web page which uses the google books API to query
+                            data based on user input.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    onclick="window.open(`https://www.github.com/GubbyDuo/Nology-Eshop`);"
+                    class="project-row project-row--right"
+                >
+                    <div class="project-row--text">
+                        <h1>React eShop</h1>
+                        <p>
+                            An eShop template using React.js to implement state
+                            for the user's cart, as well as components for each
+                            product page.
+                        </p>
+                    </div>
+                    <div class="project-row--image">
+                        <img
+                            class="project-image"
+                            src="./Images/React_EShop.png"
+                            alt=""
+                        />
+                    </div>
+                </div>
+                <div
+                    onclick="window.open(`https://github.com/GubbyDuo/Nology_Calculator`);"
+                    class="project-row project-row--left"
+                >
+                    <div class="project-row--image">
+                        <img
+                            class="project-image"
+                            src="./Images/Calculator.PNG"
+                            alt=""
+                        />
+                    </div>
+                    <div class="project-row--text">
+                        <h1>Basic Calculator</h1>
+                        <p>
+                            A basic calculator which is able to add, subtract,
+                            divide and multiply numbers. Javascript is used for
+                            the back-end and html/css is used for the display.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    onclick="window.open(`https://github.com/GubbyDuo/CLI_Wordle`);"
+                    class="project-row project-row--right"
+                >
+                    <div class="project-row--text">
+                        <h1>Java Wordle</h1>
+                        <p>
+                            A version of the popular browser game 'Wordle'
+                            written in Java through functional programming and
+                            is interacted with using the command line interface.
+                        </p>
+                    </div>
+                    <div class="project-row--image">
+                        <img
+                            class="project-image"
+                            src="./Images/JavaWordle.PNG"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
